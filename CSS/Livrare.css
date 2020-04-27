@@ -1,0 +1,514 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+/*MAIN*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body { 
+  font-size: 1.05em;
+  line-height: 1.25em;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  background: #78ADC7;
+  color: #555;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #EFEF07;
+}
+
+
+li a{
+  transition: 0.5s ease;
+}
+li a:hover {
+  color: #EFEF07;
+  font-size: 26px;
+  border-top: 4px solid #EFEF07;
+  border-bottom: 4px solid #EFEF07;
+
+  padding: 6px 0; 
+}
+
+img {
+  width: 100%;
+}
+header {
+  background-color: #293945;
+  width: 100%;
+  height: 76px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.logo img{
+  width: 25%;
+  height: 90%;
+  margin-left: -4%;
+  margin-right: -4%;
+}
+
+    .logo  h1{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font:bold;
+ }
+
+nav {
+  padding: 0;
+  background-color: #516873;
+  width: 40%;
+  height: 60%;
+  border-radius: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a{
+  font-size: 95%;
+}
+header .contact{
+  width: 30px;
+  height: 20px;
+  margin-left: 18%;
+}
+header .cos{
+  width: 30px;
+  height: 20px;
+  margin-left: 2%;
+}
+header .contact a i:hover{
+  color: #EFEF07;
+}
+header .contact a i{
+ color: white;
+ font-size: 30px;
+}
+header .cos a i:hover{
+  color: #EFEF07;
+}
+header .cos a i{
+  color: white;
+  font-size: 30px;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 0;
+  height: 0;
+}
+
+#menu-icon i{
+  font-size: 0;
+}
+section{
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .livrare{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  background-color: #85C4BF;
+  border-radius: 30px;
+}
+
+section .livrare h1{
+  font-size: 42px;
+  color: #293945;
+}
+
+.formular{
+  width: 80%;
+  height: 80%;  
+}
+.formular form{
+  width: 100%;
+  height: 90%;
+}
+.formular form h4{
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+.formular form .name{
+  width: 60%;
+  height: 30px;
+  margin-left: 7%;
+}
+.formular form .prenume{
+  width: 60%;
+  height: 30px;
+   margin-left: 8.5%;
+}
+.formular form .telefon{
+  width: 60%;
+  height: 30px;
+   margin-left: 5.2%;
+}
+.formular form .idnp{
+  width: 10%;
+  height: 30px;
+  margin-left: 2%;
+}
+
+.formular form .idic{
+  width: 60%;
+  height: 100px;
+  margin-left: 4%;
+}
+form iframe{
+  margin-left: 16%;
+  margin-top: -30px;
+  border: 8px solid  #EFEF07;
+}
+
+
+
+
+.formular button{
+  width: 30%;
+  height: 60px;
+  margin-left: 30%;
+  margin-top: 20px;
+  background-color: #EFEF07;
+  border-radius: 24px;
+  font-size: 30px;
+}
+.formular button i{
+  font-size: 30px;
+}
+
+
+
+ul {
+  list-style: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px
+}
+
+.current{
+  color: #EFEF07;
+} 
+
+    footer{
+      width: 100%;
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #18272C;
+    }
+    footer .informatii{
+      width: 60%;
+      height: 80%;
+      margin-right: 3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    footer .informatii hr{
+      border:.5px solid #78ADC7;
+      width: 35%;
+      border-radius: 25px;
+    }
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.social {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  padding: 0px;
+}
+
+
+
+[class^="icon-btn"] /*.icon-btn*/ {
+  margin-top: 1%;
+  height: 45px;
+  width: 45px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease-in-out .3s;
+  border-radius: 50px;
+  margin-left: 10px;
+  background-color: black;
+}
+
+.twitter {
+  color: #4099FF;
+}
+
+.facebook {
+  color: #3B5998;
+}
+.google-plus {
+  color: #DB5A3C;
+}
+
+.instagram {
+  color: #5C3D2E;
+}
+
+.github {
+  color: #4183C4;
+}
+
+.icon-btn:hover {
+  transform: scale(1.10); 
+  color: #FFFFFF;
+}
+
+.twitter:hover {
+  background-color: #4099FF;  
+}
+
+.facebook:hover {
+  background-color: #3B5998;  
+}
+
+.google-plus:hover {
+  background-color: #DB5A3C;  
+}
+
+.instagram:hover {
+  background-color: #5C3D2E;  
+}
+
+.github:hover {
+  background-color: #4183C4;  
+}
+
+a.link {
+  color: inherit; 
+}
+
+
+
+
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+  header {
+    position: absolute;
+  }
+
+  .logo{
+    margin-left: 40%;
+  }
+  .logo img{
+    width: 45%;
+  }
+  nav {
+  margin-left: -62%;
+  width: 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+  #menu-icon {
+      display:inline-block;
+      width: 40px;
+      height: 40px;
+  }
+
+  a:hover#menu-icon {
+  background-color: ;
+  border-radius: 4px 4px 0 0;
+}
+
+  #menu-icon i{
+    display:inline-block;
+    font-size: 30px;
+  }
+
+  nav ul, nav:active ul { 
+
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #78ADC7;
+    border: 5px solid #444;
+    right: 50%;
+    top: 60px;
+    width: 30%;
+    border-radius: 4px 0 4px 4px;
+
+  }
+
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+
+  }
+
+  nav:hover ul {
+
+    display: block;
+
+  }
+
+  header .contact{
+    margin-left: 60%;
+  }
+
+  footer{
+    height: 40vh;
+  }
+
+  footer .informatii{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  [class^="icon-btn"] /*.icon-btn*/ {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+
+}
+
+  .social {
+  width: 300px;
+  text-align: center;
+} 
+
+section{
+  width: 100%;
+  height: 150vh;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .livrare{
+  padding-top: 5%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  background-color: #85C4BF;
+  border-radius: 30px;
+}
+
+section .livrare h1{
+  margin-top: 2%;
+  font-size: 42px;
+  color: #293945;
+}
+
+.formular{
+  padding-top: 5%;
+  width: 80%;
+  height: 80%;  
+}
+.formular form{
+  width: 100%;
+  height: 90%;
+}
+.formular form h4{
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+.formular form .name{
+  width: 60%;
+  height: 30px;
+  margin-left: 10%;
+}
+.formular form .prenume{
+  width: 60%;
+  height: 30px;
+   margin-left: 14.5%;
+}
+.formular form .telefon{
+  width: 60%;
+  height: 30px;
+   margin-left: 5.2%;
+}
+.formular form .idnp{
+  width: 10%;
+  height: 30px;
+  margin-left: 2%;
+}
+
+.formular form .idic{
+  width: 60%;
+  height: 100px;
+  margin-left: 4%;
+}
+form iframe{
+  margin-left: 37%;
+  margin-top: -38px;
+  border: 8px solid  #EFEF07;
+}
+
+
+
+
+.formular button{
+  width: 60%;
+  height: 60px;
+  margin-left: 30%;
+  margin-top: 20px;
+  background-color: #EFEF07;
+  border-radius: 24px;
+  font-size: 30px;
+}
+.formular button i{
+  font-size: 30px;
+}
+   
+}
+

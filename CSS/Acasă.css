@@ -1,0 +1,724 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+/*MAIN*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body { 
+  font-size: 1.05em;
+  line-height: 1.25em;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  background: #78ADC7;
+  color: #555;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #EFEF07;
+}
+
+
+li a{
+  transition: 0.5s ease;
+}
+li a:hover {
+  color: #EFEF07;
+  font-size: 26px;
+  border-top: 4px solid #EFEF07;
+  border-bottom: 4px solid #EFEF07;
+
+  padding: 6px 0; 
+}
+
+img {
+  width: 100%;
+}
+header {
+  background-color: transparent;
+  width: 100%;
+  height: 76px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+/*
+#logo{
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 40px;
+  background: url(../img/logo.png) no-repeat center;
+  display: block;
+}
+*/
+
+nav {
+  float: left;
+  padding: 0;
+}
+header .contact{
+  float: right;
+  padding: 20px;
+  width: 30px;
+  height: 20px;
+}
+header .cos{
+  float: right;
+  padding: 20px;
+    width: 30px;
+  height: 20px;
+}
+header .contact a i:hover{
+  color: #EFEF07;
+  font-size: 46px;
+
+}
+header .contact a i{
+ color: white;
+ font-size: 30px;
+}
+header .cos a i:hover{
+  color: #EFEF07;
+  font-size: 46px;
+
+}
+header .cos a i{
+  color: white;
+  font-size: 30px;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 0;
+  height: 0;
+}
+
+#menu-icon i{
+  font-size: 0;
+}
+
+
+ul {
+  list-style: none;
+  margin-left: 30px;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px
+}
+
+.current{
+  color: #EFEF07;
+
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  margin-top: -80px;
+  background-image: url(../Foto/bbb.jpg) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8%;
+}
+ .logo{
+  width: 90%;
+  margin-left: 5%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ .logo .sub_name{
+  width: 50%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+ .logo .sub_name h2{
+    color: white;
+    font-size: 30px;
+ }
+  .logo .sub_name hr{
+    border:5px solid #78ADC7;
+    width: 25%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;
+  }
+  .logo .sub_logo{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: -9%
+  }
+   .logo .sub_logo img{
+    width: 35%;
+    height: 110%;
+    margin-left: -4%;
+    margin-right: -4%;
+   }
+    .logo .sub_logo h1{
+    color: white;
+    font-size: 160px;
+    letter-spacing: 10px;
+    font:bold;
+ }
+ .logo button{
+    width: 20%;
+    background-color: #334755;
+    height: 15%;
+    border: 4px solid white;
+    margin-top: 4%;
+    color: white;
+    border-radius: 18px 18px 10px 10px;
+    font-size: 30px;
+ }
+
+  .logo button:hover{
+    width: 25%;
+    background-color: white;
+    height: 20%;
+    border: 2px solid white;
+    margin-top: 4%;
+    color: #334755;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+
+ .post_logo{
+  width: 90%;
+  margin-left: 5%;
+  height: 28%;
+  display: flex;
+  flex-direction: row;
+ }
+
+ 
+  .post_logo .desc{
+    width: 80%;
+    height: 10%;
+    margin-top: 12%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: white;
+ }
+
+ .post_logo .desc hr{
+    border:2px solid #78ADC7;
+    width: 35%;
+    border-radius: 25px;
+    margin-bottom: 1.2%;
+ }
+
+ .content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+  .content h1{
+    margin-top: 5%;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #293945;
+  } 
+  .content .block{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .content .block .produse{
+      width: 30%;
+      height: 70%;
+      background-color: white;
+      margin-left: 1.5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+    .content .block .produse:hover{
+      height: 80%;
+    }
+  .content .block .produse .foto_produs{
+    width: 70%;
+    height: 30%;
+    background-size: cover;
+  }
+    .content .block .produse .detalii_produs{
+      width: 90%;
+      height: 30%;
+      margin: 25% 0 2% 5%;
+    }
+
+    .content .block .produse .about_produs{
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .content .block .produse .about_produs button{
+      width: 60%;
+      height: 70%;
+      font-size: 18px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30vw;
+      background-color: #EFEF07;
+      font-weight: 400;
+    }
+
+    footer{
+      width: 100%;
+      height: 20vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #18272C;
+    }
+    footer .informatii{
+      width: 60%;
+      height: 80%;
+      margin-right: 3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    footer .informatii hr{
+      border:.5px solid #78ADC7;
+      width: 35%;
+      border-radius: 25px;
+    }
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.social {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  padding: 0px;
+}
+
+
+
+[class^="icon-btn"] /*.icon-btn*/ {
+  margin-top: 1%;
+  height: 45px;
+  width: 45px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease-in-out .3s;
+  border-radius: 50px;
+  margin-left: 10px;
+  background-color: black;
+}
+
+.twitter {
+  color: #4099FF;
+}
+
+.facebook {
+  color: #3B5998;
+}
+.google-plus {
+  color: #DB5A3C;
+}
+
+.instagram {
+  color: #5C3D2E;
+}
+
+.github {
+  color: #4183C4;
+}
+
+.icon-btn:hover {
+  transform: scale(1.10); 
+  color: #FFFFFF;
+}
+
+.twitter:hover {
+  background-color: #4099FF;  
+}
+
+.facebook:hover {
+  background-color: #3B5998;  
+}
+
+.google-plus:hover {
+  background-color: #DB5A3C;  
+}
+
+.instagram:hover {
+  background-color: #5C3D2E;  
+}
+
+.github:hover {
+  background-color: #4183C4;  
+}
+
+a.link {
+  color: inherit; 
+}
+
+
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+  header {
+    position: absolute;
+  }
+  nav {
+  padding: 20px;  
+}
+
+  #menu-icon {
+    display:inline-block;
+      width: 40px;
+      height: 40px;
+  }
+
+  a:hover#menu-icon {
+  background-color: ;
+  border-radius: 4px 4px 0 0;
+}
+
+  #menu-icon i{
+    display:inline-block;
+    font-size: 30px;
+  }
+
+  nav ul, nav:active ul { 
+
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #78ADC7;
+    border: 5px solid #444;
+    right: 50%;
+    top: 60px;
+    width: 30%;
+    border-radius: 4px 0 4px 4px;
+
+  }
+
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+
+  }
+
+  nav:hover ul {
+
+    display: block;
+
+  }
+  section{
+    position: relative;
+    padding-top: 30%;
+  }
+
+    .logo{
+      width: 100%;
+      margin-left: -1.5%;
+    }
+    .post_logo{
+      width: 100%;
+      margin-left: -1.5%;
+    }
+
+   .logo .sub_name{
+    width: 90%;
+   }
+     .logo .sub_logo{
+      height: 40%;
+      margin-left: 5%;
+      margin-top: 10%;
+     }
+
+
+   .logo .sub_logo img{
+    width: 24%;
+    height: 52%;
+    margin-left: -4%;
+    margin-right: -4%;
+   }
+
+    .logo .sub_logo h1{
+    color: white;
+    font-size: 70px;
+    letter-spacing: 4px;
+    font:bold;
+ }
+
+  .logo button{
+    width: 30%;
+    background-color: #334755;
+    height: 15%;
+    border: 4px solid white;
+    margin-top: 6%;
+    color: white;
+    border-radius: 18px 18px 10px 10px;
+    font-size: 24px;
+ }
+ .post_logo .socio{
+    height: 80%;
+    width:10%;
+    font-size: 30px;
+    margin-top:-20px;
+    margin-left: 35px;
+ }
+  .post_logo .socio a{
+    
+ }
+  .post_logo .desc{
+    height: 100%;
+    width: 80%;
+    font-size: 12px;
+ }
+
+ .post_logo .desc hr{
+    width: 50%;
+    border-radius: 35px;
+ }
+  .content{
+  width: 100%;
+  height: 350vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .content .block{
+    width: 100%;
+    flex-direction: column;
+ }
+   .content .block .produse{
+      width: 70%;
+      height: 70%;
+      margin: 5% 0 5% 0;
+   }
+
+     .content h1{
+    margin-top: 8%;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #293945;
+  } 
+
+  footer .informatii{
+    width: 100%;
+  }
+  .social {
+  width: 300px;
+  text-align: center;
+}
+
+  [class^="icon-btn"] /*.icon-btn*/ {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+
+}
+  .social {
+  width: 300px;
+  text-align: center;
+}
+
+}
+
+
+
+
+@media only screen and (max-width : 380px) {
+  header {
+    position: relative;
+  }
+  nav {
+}
+
+  #menu-icon {
+    display:inline-block;
+      width: 40px;
+      height: 40px;
+  }
+
+  a:hover#menu-icon {
+  background-color: ;
+  border-radius: 4px 4px 0 0;
+}
+
+  #menu-icon i{
+    display:inline-block;
+    font-size: 30px;
+  }
+
+  nav ul, nav:active ul { 
+
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #78ADC7;
+    border: 5px solid #444;
+    right: 50%;
+    top: 60px;
+    width: 30%;
+    border-radius: 4px 0 4px 4px;
+
+  }
+
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+
+  }
+
+  nav:hover ul {
+
+    display: block;
+
+  }
+
+  section{
+    position: relative;
+    padding-top: 30%; 
+  }
+
+    .logo{
+      width: 100%;
+      margin-left: -1.5%;
+    }
+    .post_logo{
+      width: 100%;
+      margin-left: -1.5%;
+    }
+
+   .logo .sub_name{
+    width: 90%;
+   }
+     .logo .sub_logo{
+      height: 40%;
+      margin-left: 5%;
+      margin-top: 10%;
+     }
+
+
+   .logo .sub_logo img{
+    width: 24%;
+    height: 52%;
+    margin-left: -4%;
+    margin-right: -4%;
+   }
+
+    .logo .sub_logo h1{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 4px;
+    font:bold;
+ }
+
+  .logo button{
+    width: 30%;
+    background-color: #334755;
+    height: 15%;
+    border: 4px solid white;
+    margin-top: 6%;
+    color: white;
+    border-radius: 18px 18px 10px 10px;
+    font-size: 24px;
+ }
+
+  .post_logo .desc{
+    height: 100%;
+    width: 80%;
+    font-size: 9px;
+    margin-top: -4%;
+ }
+
+ .post_logo .desc hr{
+    width: 50%;
+    border-radius: 35px;
+ }
+  .content{
+  width: 100%;
+  height: 350vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .content .block{
+    width: 100%;
+    flex-direction: column;
+ }
+   .content .block .produse{
+      width: 70%;
+      height: 70%;
+      margin: 5% 0 5% 0;
+   }
+
+     .content h1{
+    margin-top: 8%;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #293945;
+  } 
+
+  footer{
+    height: 40vh;
+  }
+
+  footer .informatii{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  [class^="icon-btn"] /*.icon-btn*/ {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+
+}
+
+  .social {
+  width: 300px;
+  text-align: center;
+} 
+
+}
